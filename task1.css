@@ -1,0 +1,260 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #457D58;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #C2D1A6;
+    border-radius: 20px;
+    padding: 8px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #375b46;
+    color: #a8b88c;
+}
+
+.buttons {
+    display: flex;
+}
+
+button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.login {
+    background-color: #C2D1A6;
+    color: #457D58;
+}
+
+button.signup {
+    background-color: #C2D1A6;
+    color: #457D58;
+}
+
+button.login:hover {
+    background-color: #375b46;
+    color: #C2D1A6;
+}
+
+button.signup:hover {
+    background-color: #375b46;
+    color: #C2D1A6;
+}
+
+.navbar-scrolled {
+    background-color: #375b46;
+}
+
+.navbar-scrolled .nav-links a {
+    color: #C2D1A6;
+}
+
+.navbar-scrolled .nav-links a:hover {
+    background-color: #457D58;
+    color: #a8b88c;
+}
+
+.navbar-scrolled .logo h1, .navbar-scrolled .buttons button {
+    color: #375b46;
+}
+.navbar-scrolled .buttons button:hover {
+    background-color: #a8b88c;
+    color: #457D58;
+}
+
+.navbar-scrolled .logo h1 {
+    color: #a8b88c;
+}
+
+.content {
+    background-color: #C2D1A6;
+    padding-top: 70px; /* Offset for the fixed header */
+    padding-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px); /* Viewport height minus header and footer */
+    padding-top: 20px;
+}
+
+main img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.vision {
+    background-color: #457d585e;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.vision h1 {
+    text-align: left;
+    color: #375b46;
+}
+.services {
+    margin: 20px;
+    padding: 30px;
+    background-color: #457d585e;
+    border-radius: 20px;
+}
+
+.services h1 {
+    text-align: left;
+    color: #375b46;
+}
+
+.services .reminders,
+.services .management,
+.services .tracking_reporting,
+.services .user_support {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    background-color: #C2D1A6;
+    border-radius: 10px;
+}
+.services .reminders.top,
+.services .management.top,
+.services .tracking_reporting.top,
+.services .user_support.top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    background-color: #C2D1A6;
+    border-radius: 10px;
+}
+.services .reminders h2,
+.services .management h2,
+.services .tracking_reporting h2,
+.services .user_support h2 {
+    margin: 20px;
+    text-align:start;
+    color: #375b46;
+}
+.services .tracking_reporting, 
+.services .user_support {
+    flex-direction: row-reverse;
+}
+.services .img1 {
+    flex: 1;
+    display: flex; 
+    justify-content: center;
+    filter: drop-shadow(1px 1px 20px green);
+    margin: 20px;
+}
+
+.services .img1 img {
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 50%;
+}
+.services .other {
+    flex: 3;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.services .other ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.services .other ul li {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.services .other ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: text-decoration 0.3s;
+}
+
+.services .other ul li a:hover {
+    text-decoration: underline;
+}
+
+.services .other ul li p {
+    margin: 10px 0 0 0;
+    color: #375b46;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #457D58;
+    color: #C2D1A6;
+    width: 100%;
+    bottom: 0;
+    position:relative; 
+}
