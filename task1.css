@@ -190,10 +190,10 @@ main img {
     background-color: #C2D1A6;
     border-radius: 10px;
 }
-.services .reminders h2,
-.services .management h2,
-.services .tracking_reporting h2,
-.services .user_support h2 {
+.services .reminders h3,
+.services .management h3,
+.services .tracking_reporting h3,
+.services .user_support h3 {
     margin: 20px;
     text-align:start;
     color: #375b46;
@@ -249,6 +249,66 @@ main img {
     margin: 10px 0 0 0;
     color: #375b46;
 }
+.reviews{
+    margin: 20px;
+    padding: 30px;
+    background-color: #457d585e;
+    border-radius: 20px;
+}
+
+.reviews h1 {
+    text-align: left;
+    color: #375b46;
+}
+
+.users{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+.user1 , .user2{
+    background-color:white;
+    color: #375b46;
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.subscribe{
+    margin: 20px;
+    padding: 30px;
+    background-color: #457d585e;
+    border-radius: 20px;
+}
+.subscribe h1 {
+    text-align: left;
+    color: #375b46;
+}
+.subscribe p{
+    text-align: center;
+    color: #000;
+}
+.subscribe .contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.subscribe .contact input[type="email"] {
+    width: 30%; 
+    margin-right: 10px; 
+    border-radius: 20px;
+}
+.contact button{
+    background-color: #375b46;
+    color: #C2D1A6;
+    border: 1px solid #C2D1A6 ;
+    box-shadow: 2px 2px 10px #375b46;
+    transition: transform 0.3s ease;
+}
+.contact button:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 20px #375b46; 
+}
 footer {
     text-align: center;
     padding: 20px;
@@ -256,5 +316,31 @@ footer {
     color: #C2D1A6;
     width: 100%;
     bottom: 0;
-    position:relative; 
+    position: relative; 
 }
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align items in a row */
+    justify-content: center; /* Center the items horizontally */
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #000; /* Black color for the links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #C2D1A6; /* Change text color on hover */
+    text-decoration: underline; /* Underline text on hover */
+}
+footer p{
+ color: #000;
+ }
